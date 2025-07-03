@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auf Bäumen – Outdoor‑Team‑ &amp; Resilienztraining</title>
+  <style>
+    /* =====  Basic Styles  ===== */
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #fff;
+    }
+    h1, h2, h3 { margin: 0 0 .6rem 0; }
+    p       { margin: 0 0 1.2rem 0; }
+
+    /* =====  Hero  ===== */
+    header {
+      background: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1400&q=80") center/cover no-repeat;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 0 2px 4px rgba(0,0,0,.6);
+    }
+    header h1 {
+      font-size: 3rem;
+      padding: .75rem 1.25rem;
+      background: rgba(0,0,0,.35);
+      border-radius: 8px;
+    }
+
+    /* =====  Main Sections  ===== */
+    section {
+      padding: 4rem 1rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .feature {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      border-radius: 6px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: #2e7d32;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 4px;
+      font-weight: 700;
+    }
+
+    /* =====  Footer  ===== */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    /* =====  Chat Widget  ===== */
+    .chat-launcher {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #2e7d32;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,.3);
+      z-index: 999;
+    }
+    #chat-frame {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 350px;
+      height: 500px;
+      border: 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,.3);
+      display: none;
+      z-index: 998;
+    }
+    @media (max-width: 480px) {
+      #chat-frame {
+        width: 95%;
+        right: 2.5%;
+        height: 70vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- =====  Hero Section  ===== -->
+  <header>
+    <h1>Mehr Teamgeist. Mehr Resilienz. Draußen.</h1>
+  </header>
+
+  <!-- =====  Intro / Features  ===== -->
+  <section>
+    <h2>Warum Auf Bäumen?</h2>
+    <p>Wir bringen Teams raus aus dem Büro und hinein in intensive Natur­erlebnisse, die Vertrauen, Kommunikation und Widerstandskraft stärken. Von eintägigen Waldtrainings bis hin zu mehrtägigen Retreats – individuell, wirkungsvoll und sicher.</p>
+
+    <div class="features">
+      <div class="feature">
+        <h3>Outdoor‑Teamevents</h3>
+        <p>Baumklettern, mobiler Seilgarten, GPS‑Challenges und mehr – echte Herausforderungen, die zusammen­schweißen.</p>
+      </div>
+      <div class="feature">
+        <h3>Resilienz‑Seminare</h3>
+        <p><em>NatureLead</em> – Stress­management für Führungs­kräfte im Schwarzwald. Achtsamkeit &amp; Natur als Lehrmeisterin.</p>
+      </div>
+      <div class="feature">
+        <h3>Heldenreisen</h3>
+        <p>Mehr­tägige Expeditionen im Pfälzer Wald: Change‑Prozesse erlebbar machen.</p>
+      </div>
+    </div>
+
+    <p style="margin-top:2rem;">
+      <a class="btn" href="mailto:info@auf-baeumen.de?subject=Anfrage%20Teamtraining">Jetzt Vorgespräch anfragen</a>
+    </p>
+  </section>
+
+  <!-- =====  Footer  ===== -->
+  <footer>
+    <p>&copy; 2011‑2025 Auf Bäumen – Christian Bengsch &amp; Michael May GbR • Mainz &amp; Heidelberg</p>
+  </footer>
+
+  <!-- =====  Chatbot Widget  ===== -->
+  <iframe id="chat-frame" src="https://zoebahati.app.n8n.cloud/webhook/6851f02e-40f6-4b49-8efd-129224d8b631/chat"></iframe>
+  <div class="chat-launcher" onclick="toggleChat()">💬</div>
+
+  <script>
+    function toggleChat () {
+      var frame = document.getElementById('chat-frame');
+      frame.style.display = frame.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>
